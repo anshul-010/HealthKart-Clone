@@ -1,0 +1,1317 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+    /* background-color:rgb(244,244,244) */
+
+}
+
+
+/* *******************************************second navbar */
+#subLowerNavBar {
+    margin: 20px auto;
+    width: 85%;
+    /* background-color: rgb(255, 255, 255); */
+}
+
+#subLowerNavBar>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#subLowerNavBar>ul>li>a {
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 500;
+    font-style: normal;
+    line-height: 20px;
+}
+
+#subLowerNavBar>ul>li>a:hover {
+    color: rgb(51, 51, 51);
+    font-style: normal;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    /* cursor: pointer; */
+}
+
+/* #subLowerNavBar > ul > li:hover {
+    border-bottom: 2px solid rgb(244, 51, 151);
+  } */
+
+.dropDownDivItems {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.dropDownDiv {
+    width: 98%;
+    margin: auto;
+    margin-top: 2px;
+    right: 0%;
+    left: 0%;
+    transition: 0.5s;
+    position: absolute;
+    display: none;
+    background-color: white
+        /* border: 1px solid rgb(160, 158, 158); */
+}
+
+#subLowerNavBar>ul>li:hover .dropDownDiv {
+    display: block;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.dropDownDivItems>div>h4 {
+    font-size: 20px;
+    color: rgb(60, 58, 58);
+    font-weight: 600;
+    line-height: 20px;
+    font-family: "Mier demi";
+}
+
+.dropDownDivItems>div>ul>li>a {
+    font-size: 17px;
+    color: rgb(102, 102, 102);
+    font-weight: 450;
+    line-height: 33px;
+
+}
+
+.dropDownDivItems>div>ul>li>a:hover {
+    text-decoration: underline;
+
+
+}
+
+/* *******************second navbar end */
+
+#secondline {
+    /* border: 1px solid; */
+    background-color: #effbfc;
+    padding: 13px;
+    margin: auto;
+    text-align: center;
+}
+
+/* *************************************************************end */
+
+/* main product section css ***********************************/
+
+
+/* slider start */
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#slider {
+    width: 100%;
+    margin: auto;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    margin-top: 10px;
+    /* height: 440px; */
+    /* border: 1px s/olid; */
+}
+
+.swiper {
+    width: 100%;
+    height: fit-content;
+}
+
+.swiper-slide>img {
+    width: 100%;
+    /* height: 70vh; */
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+    color: rgb(251, 250, 250);
+    /* border: 1px solid; */
+    border-radius: 50%;
+    padding: 8px;
+    width: 3%;
+    background-color: rgb(233, 221, 221);
+
+}
+
+.swiper .swiper-pagination-bullet-active {
+    background-color: white;
+}
+
+/* slider end */
+
+
+.products>h1 {
+    margin-left: 67px;
+}
+
+/* four items */
+
+.product-items {
+    /* border: 1px solid; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    width: 90%;
+    margin: auto;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 5px;
+
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.img {
+    /* border: 1px solid green; */
+    cursor: pointer;
+}
+
+.img>img {
+    display: block;
+    margin: auto;
+    padding: 30px;
+
+}
+
+.desc {
+    /* border: 1px solid rgb(53, 60, 53); */
+    color: rgb(69, 64, 64);
+    font-size: small;
+
+    font-weight: 500;
+    line-height: 25px;
+    /* margin: 5px; */
+    margin: 5px 5px;
+}
+
+.price {
+    /* border: 1px dotted blue; */
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    margin: 5px 5px;
+}
+
+.price :nth-child(1) {
+    color: rgb(49, 51, 51);
+}
+
+.price :nth-child(2) {
+    color: rgb(173, 169, 169);
+    text-decoration: line-through;
+}
+
+.price :nth-child(3) {
+    color: rgb(70, 210, 70);
+}
+
+.product-items .prime {
+    display: flex;
+    width: 90%;
+    font-size: small;
+    margin: 15px auto;
+    line-height: 5px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: rgb(67, 64, 64);
+    padding: 3px 3px;
+}
+
+.btn {
+    border: 1px solid orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 5px;
+    line-height: 7px;
+    background-color: #fcf5f0;
+    cursor: pointer;
+    color: rgb(55, 49, 49);
+    padding: 5px;
+}
+
+.btn>img {
+    width: 10%;
+    height: 10%;
+    /* margin: 5px 5px; */
+    /* color: aliceblue; */
+}
+
+.info {
+    padding: 10px;
+    border: 1px solid rgb(221, 209, 209);
+    border-radius: 5px;
+    /* margin: ; */
+}
+
+/* four images */
+.image {
+    width: 90%;
+    padding: 30px;
+    margin: 20px auto;
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 10px;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+
+.image>img {
+    width: 24%;
+    border-radius: 8px;
+
+}
+
+/* other sliders */
+.minislide {
+    width: 80%;
+    margin: 30px auto;
+    /* border: 1px black; */
+    border-radius: 15px;
+}
+
+.minislide img {
+    border-radius: 15px;
+}
+
+
+/* main product section css end******************************* */
+
+.brand {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+    /* border: 1px solid red; */
+}
+
+.para {
+    /* border: 1px solid red; */
+    font-family: sans-serif;
+    margin-top: 20px;
+    padding-left: 120px;
+
+}
+
+
+#brandImg {
+
+    display: flex;
+    /* width: 80%; */
+    margin-top: 20px;
+    gap: 20px;
+    justify-content: center;
+    /* justify-content:space-between; */
+
+
+    /* border: 1px solid red */
+}
+
+
+
+#whyHelthKart {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+
+}
+
+.why {
+
+    padding-left: 120px;
+    /* border: 1px solid blue; */
+}
+
+.healthKartQues {
+
+    /* border: 1px solid red; */
+
+    margin-top: 20px;
+
+
+}
+
+.healthKartQues>h2 {
+
+    padding-right: 100px;
+    /* border: 1px solid red; */
+}
+
+.whyHealthKartAns {
+
+    /* border: 1px solid green; */
+
+    display: flex;
+    margin-top: 20px;
+
+    justify-content: space-evenly;
+
+}
+
+.para-1 {
+    /* border: 1px solid red; */
+    font-family: sans-serif;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+.main-container {
+    display: flex;
+    /* width: 90%; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    gap: 20px;
+    /* border: 1px solid red; */
+    /* justify-content: space-around; */
+}
+
+.container {
+    /* display: flex; */
+    width: 40%;
+    margin-left: 100px;
+
+    margin-top: 20px;
+    /* border: 1px solid green; */
+}
+
+.premium-earn {
+
+    display: flex;
+    /* width: 33%; */
+    /* gap: 50px; */
+    color: white;
+
+    background-color: rgb(0, 181, 183);
+
+    /* border: 1px solid red; */
+    justify-content: space-evenly;
+
+    border-radius: 20px;
+
+    padding-left: 50px;
+
+    padding-top: 10px;
+}
+
+.pm {
+
+    /* border: 1px solid red; */
+
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.pmBut {
+    padding: 15px 32px;
+    border: 1px solid white;
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+    border-radius: 10px;
+
+    color: rgb(0, 181, 183);
+
+    font-family: sans-serif;
+
+}
+
+.earn {
+    display: flex;
+    /* width: 36%; */
+
+    gap: 20px;
+    color: white;
+
+    margin-top: 50px;
+
+    background-color: rgb(247, 247, 247);
+
+    /* border: 1px solid red; */
+    justify-content: space-evenly;
+
+    border-radius: 20px;
+    text-align: center;
+
+
+
+    /* padding-left: 50px;
+    
+
+    padding-top: 10px; */
+}
+
+.earn-para {
+    color: black;
+    /* background-color: red; */
+    background-color: rgb(247, 247, 247);
+    margin-top: 40px;
+    padding-left: 50px;
+    /* padding-top: 5px; */
+}
+
+.earn-img img {
+
+    width: 300px;
+    background-color: rgb(247, 247, 247);
+    /* padding-bottom: 100px; */
+}
+
+.doctor-container {
+    /* border: 1px solid forestgreen; */
+    padding-top: 20px;
+
+    /* width: 300px; */
+}
+
+.doctor-container img {
+    width: 660px;
+}
+
+.container-2 {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 50px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+    /* height: 500px; */
+
+    padding-top: 20px;
+    /* border: 1px solid blueviolet; */
+
+    /* text-align: center; */
+}
+
+.phone-img img {
+    width: 700px;
+}
+
+.heading {
+
+    padding-bottom: 20px;
+}
+
+.download {
+
+    /* border: 1px solid blue; */
+    padding: 30px;
+}
+
+.shoping {
+    display: flex;
+
+    /* border: 1px solid red; */
+    gap: 30px;
+
+    padding: 20px;
+    font-family: sans-serif;
+
+}
+
+.shoping:hover {
+
+    border: 1px solid rgb(0, 181, 183);
+
+    border-radius: 20px;
+
+
+    cursor: pointer;
+
+}
+
+.fuel {
+    display: flex;
+
+    /* border: 1px solid rgb(43, 9, 167); */
+
+    font-family: sans-serif;
+
+    padding: 20px;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.fuel:hover {
+
+    border: 1px solid rgb(0, 181, 183);
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+}
+
+.verified {
+    display: flex;
+
+    /* border: 1px solid rgb(2, 128, 15); */
+
+    border-radius: 20px;
+
+    padding: 20px;
+    font-family: sans-serif;
+    gap: 30px;
+
+    margin-top: 30px;
+}
+
+.verified:hover {
+
+    border: 1px solid rgb(0, 181, 183);
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+}
+
+.store {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+
+}
+
+.details {
+    display: flex;
+    padding-left: 200px;
+    margin-top: 20px;
+
+    text-align: justify;
+    /* text-align: center; */
+    /* align-items: center; */
+    /* border: 1px solid red; */
+    font-family: sans-serif;
+
+    width: 80%;
+}
+
+.details div {
+
+    padding-bottom: 30px;
+    margin-top: 50px;
+
+    /* border: 1px solid red; */
+}
+
+.details details div h5 {
+
+    /* text-align: justify; */
+    padding-left: 25px;
+    /* border: 1px solid red; */
+    color: rgb(31, 30, 30);
+}
+
+
+.para-cont5 {
+    /* border: 1px solid red; */
+    /* line-gap-override: 3px; */
+    padding-left: 25px;
+    margin: 1em;
+    color: rgb(140, 137, 137);
+
+}
+
+li {
+    color: rgb(140, 137, 137);
+}
+
+li span {
+    /* border: 1px solid red; */
+    color: rgb(140, 137, 137);
+}
+
+li strong {
+    color: rgba(0, 0, 0, 0.585);
+}
+
+nav {
+
+    display: flex;
+
+    /* width: 80%; */
+
+    height: 100px;
+
+    /* border: 1px solid red; */
+
+    justify-content: space-evenly;
+    padding-top: 10px;
+
+    align-items: center;
+
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    ;
+
+    /* justify-content: center; */
+}
+
+.imgInput {
+    display: flex;
+    justify-content: space-evenly;
+    /* padding-right: 100px; */
+
+    width: 80%;
+    /* border: 1px solid red; */
+
+    align-items: center;
+
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;; */
+}
+
+.loginCart {
+    display: flex;
+
+    width: 40%;
+    justify-content: space-evenly;
+    padding-top: 10px;
+
+
+}
+
+
+form.example input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 600px;
+    background: #f1f1f1;
+
+    margin-top: 10px;
+    border-radius: 10px;
+    /* background-color: rebeccapurple; */
+
+    /* border: 1px solid red; */
+}
+
+form.example button {
+    float: left;
+    width: 100px;
+    padding: 20px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#logoImg img {
+    width: 150px;
+
+    /* height: 100px; */
+    /* border: 1px solid blue; */
+
+    /* padding-top: 500px; */
+
+    /* margin-top: 70px; */
+
+
+}
+
+#login button {
+
+    /* background-color: #4CAF50; */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(12, 176, 176);
+}
+
+#cart button {
+
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    ;
+    background-color: rgb(12, 176, 176);
+    font-family: sans-serif;
+
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-main {
+
+    display: flex;
+
+
+    width: 90%;
+    padding-top: 20px;
+    justify-content: center;
+
+    box-shadow: -2px 2px 70px -25px rg(0, 0, 0, 0.3);
+
+    /* align-items: center; */
+    justify-content: space-evenly;
+
+    border: 1px solid red;
+}
+
+
+
+.menu li {
+
+    list-style: none;
+    /* border: 1px solid red; */
+    align-items: center;
+    text-align: center;
+}
+
+.shop:hover {
+    visibility: visible;
+    /* opacity: 1; */
+}
+
+
+.menu li a {
+    text-decoration: none;
+
+    /* color:rgb(175,129,87); */
+    color: rgb(29, 29, 29);
+    text-align: center;
+
+    /* border: 1px solid red; */
+
+    font-size: 15px;
+
+    /* transition: color 0.3s ease; */
+
+    font-family: sans-serif;
+}
+
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 10,
+
+
+
+
+}
+
+.shop:hover {
+    border: 1px solid red;
+
+    visibility: visible;
+
+
+}
+
+
+.cat {
+
+    margin-top: 10px;
+
+    /* visibility: hidden; */
+}
+
+
+
+.cat li {
+
+    /* text-align: center; */
+
+    /* border: 1px solid red; */
+
+    padding: 10px;
+
+    text-align: justify;
+
+
+
+}
+
+
+
+
+.footer-info {
+    /* border: 1px solid red; */
+
+    display: flex;
+    /* justify-content: center; */
+
+    padding-top: 50px;
+
+    color: white;
+    justify-content: space-evenly;
+    background-color: rgb(13, 33, 34);
+
+
+}
+
+.aboutUs li {
+    list-style: none;
+
+}
+
+.aboutUs li a {
+    border: none;
+    color: white;
+    line-height: 30px;
+    /* padding: 15px 32px; */
+    /* text-align: center; */
+    /* text-align: justify; */
+    text-decoration: none;
+
+    /* display: inline-block; */
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    ;
+    /* background-color: rgb(12, 176, 176); */
+    font-family: sans-serif;
+}
+
+.aboutUs li a:hover {
+    border: 1px solid white;
+}
+
+
+.brand-foot li {
+    list-style: none;
+
+}
+
+.brand-foot li a {
+    border: none;
+    color: white;
+    /* padding: 15px 32px; */
+    /* text-align: center; */
+    /* text-align: justify; */
+    text-decoration: none;
+    line-height: 30px;
+
+    /* display: inline-block; */
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    ;
+    /* background-color: rgb(12, 176, 176); */
+    font-family: sans-serif;
+}
+
+.brand-foot li a:hover {
+    border: 1px solid white;
+}
+
+.health li {
+    list-style: none;
+
+}
+
+.health li a {
+    border: none;
+    color: white;
+    /* padding: 15px 32px; */
+    /* text-align: center; */
+    /* text-align: justify; */
+    text-decoration: none;
+    line-height: 30px;
+
+    /* display: inline-block; */
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    ;
+    /* background-color: rgb(12, 176, 176); */
+    font-family: sans-serif;
+}
+
+.health li a:hover {
+    border: 1px solid white;
+}
+
+.quick li {
+    list-style: none;
+
+}
+
+.quick li a {
+    border: none;
+    color: white;
+    /* padding: 15px 32px; */
+    /* text-align: center; */
+    /* text-align: justify; */
+    text-decoration: none;
+    line-height: 30px;
+
+    /* display: inline-block; */
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    ;
+    /* background-color: rgb(12, 176, 176); */
+    font-family: sans-serif;
+}
+
+.quick li a:hover {
+    border: 1px solid white;
+}
+
+.contact-us {
+    align-items: center;
+    line-height: 30px;
+
+}
+
+
+#footer {
+
+    background-color: rgb(13, 33, 34);
+    ;
+}
+
+.footer-img {
+
+    display: flex;
+    gap: 10px;
+
+    padding-left: 190px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    /* border: 1px solid red; */
+    /* width: 400px; */
+}
+
+.mesg-class {
+    display: flex;
+    padding-top: 10px;
+    gap: 5px;
+}
+
+.mesg-class div a {
+    color: white;
+}
+
+.call-class {
+    display: flex;
+    gap: 5px;
+}
+
+.call-class div a {
+    color: wheat
+}
+
+/* subscribe-part here */
+
+.subscribe {
+    /* border: 1px solid
+     red; */
+    width: 350px;
+    background-color: white;
+
+    color: black;
+    height: 400px;
+    padding: 30px;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+form.email {
+    margin-top: 10px;
+}
+
+form.email input[type=text] {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid grey;
+    float: left;
+    width: 200px;
+    background: #f1f1f1;
+
+
+    margin-top: 10px;
+    border-radius: 10px;
+    /* background-color: rebeccapurple; */
+
+    /* border: 1px solid red; */
+}
+
+/* form.email button {
+     float: left;
+    width: 10px;
+    padding: 20px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; 
+    cursor: pointer; 
+  } */
+
+form.email button:hover {
+    background: #0b7dda;
+}
+
+form.email::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.offers-img {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.offers-img div img {
+    width: 70px;
+}
+
+.offers {
+    padding-top: 10px;
+}
+
+.social-media-img {
+
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+}
+
+.social-media-img i {
+    /* border: 1px solid red; */
+    font-size: 25px;
+}
+
+.download-app {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.download-appstore {
+    /* border: 1px solid red; */
+    padding-top: 10px;
+}
+
+.download-app img {
+
+    width: 100px;
+}
+
+
+/****************** login page CSS **************/
+/* change by hitesh */
+#login {
+    display: flex;
+}
+#userIcon{
+    display: none;
+}
+
+#showUsername,#userIcon{
+    align-self: center;
+}
+/* ++++++++++++++++++++++ */
+
+#loginWrapper {
+    position: fixed;
+    display: flex;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, .7);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    z-index: -1;
+}
+
+#loginBtn,
+#closeBtn {
+    cursor: pointer;
+}
+
+#loginContainer {
+    height: 610px;
+    width: 950px;
+    border-radius: 12px;
+    background-color: #fff;
+    display: flex;
+    padding: 10px;
+}
+
+#loginSlider {
+    width: 49%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: rgb(248, 247, 247);
+    border-radius: 12px 0 0 12px;
+}
+
+#loginSlider>.slide {
+    width: 100%;
+    height: 80%;
+    transition: 1s;
+    position: absolute;
+    text-align: center;
+}
+
+#loginFormContainer {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+    position: relative;
+}
+
+#loginFormContainer>#closeBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(177, 177, 177);
+    color: rgb(35, 35, 35);
+    border-radius: 50%;
+}
+
+#formWrapper {
+    display: block;
+}
+
+#loginForm,
+#verifyForm,
+#regForm {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#loginForm>*,
+#verifyForm>*,
+#regForm>* {
+    margin-top: 20px;
+}
+
+#loginForm>div>*,
+#loginForm>input[type="submit"],
+#verifyForm>*,
+#regForm>* {
+    padding: 10px;
+    border: 1px solid rgb(206, 206, 206);
+    font-size: 25px;
+    outline: none;
+}
+
+#loginForm>div>span {
+    border-radius: 10px 0 0 10px;
+}
+
+#loginForm>div>input {
+    border-radius: 0 10px 10px 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#loginForm>input[type="submit"] {
+    border: none;
+    font-weight: 600;
+    color: rgb(145, 145, 145);
+    border-radius: 10px;
+}
+
+
+/* MoNo. verify */
+
+#verifyPage {
+    display: none;
+}
+
+#verifyForm>input,
+#regForm>* {
+    border-radius: 12px;
+}
+
+#registerPage {
+    display: none;
+}
+
+
+/* Media queries for both Tablets and smartphone */
+
+@media only screen and (max-width:850px) {
+    #loginContainer {
+        flex-direction: column;
+    }
+
+    #loginFormContainer,
+    #loginSlider {
+        width: 100%;
+    }
+}
+
+/* *********login page css end************* */

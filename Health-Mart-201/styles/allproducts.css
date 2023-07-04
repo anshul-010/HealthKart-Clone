@@ -1,0 +1,625 @@
+#main_container{
+    display: flex;
+}
+/* firts nav start ****************************************/
+
+nav{
+
+    display: flex;
+
+    /* width: 80%; */
+
+    height: 100px;
+
+    /* border: 1px solid red; */
+
+    justify-content: space-evenly;
+    padding-top: 10px;
+
+    align-items: center;
+
+   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;;
+
+    /* justify-content: center; */
+}
+
+.imgInput{
+  display: flex;
+  justify-content: space-evenly;
+    /* padding-right: 100px; */
+
+    width: 80%;
+    /* border: 1px solid red; */
+
+    align-items: center;
+
+   /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;; */
+}
+
+.loginCart{
+    display: flex;
+  
+    width: 40%;
+    justify-content: space-evenly; 
+    padding-top: 10px;
+
+    
+}
+form.example input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 600px;
+    background: #f1f1f1;
+  
+    margin-top: 10px;
+    border-radius: 10px;
+    /* background-color: rebeccapurple; */
+
+    /* border: 1px solid red; */
+  }
+  form.example button {
+     float: left;
+    width: 100px;
+    padding: 20px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; 
+    cursor: pointer; 
+  }
+
+  form.example button:hover {
+    background: #0b7dda;
+  }
+
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+#logoImg img{
+    width: 150px;
+
+    /* height: 100px; */
+    /* border: 1px solid blue; */
+
+    /* padding-top: 500px; */
+
+    /* margin-top: 70px; */
+
+   
+}
+
+#logoImg:hover{
+  cursor: pointer;
+}
+
+#login button{
+
+    /* background-color: #4CAF50; */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(12, 176, 176);
+}
+
+#cart button{
+
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;;
+    background-color: rgb(12, 176, 176);
+    font-family: sans-serif;
+
+}
+
+/* first nav end****************************** */
+/* *******************************************second navbar */
+#subLowerNavBar {
+    margin: 20px auto;
+    width: 85%;
+    /* background-color: rgb(255, 255, 255); */
+  }
+  #subLowerNavBar > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #subLowerNavBar > ul > li > a {
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    font-weight: 500;
+    font-style: normal;
+    line-height: 20px;
+  }
+  #subLowerNavBar > ul > li > a:hover {
+    color: rgb(51, 51, 51);
+    font-style: normal;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    /* cursor: pointer; */
+  }
+  /* #subLowerNavBar > ul > li:hover {
+    border-bottom: 2px solid rgb(244, 51, 151);
+  } */
+  
+  .dropDownDivItems {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+  }
+  .dropDownDiv {
+    width: 98%;
+    margin: auto;
+    margin-top: 2px;
+    right: 0%;
+    left: 0%;
+    transition: 0.5s;
+    position: absolute;
+    display: none;
+    background-color: white
+    /* border: 1px solid rgb(160, 158, 158); */
+  }
+  #subLowerNavBar > ul > li:hover .dropDownDiv {
+    display: block;
+  }
+  ul,
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  .dropDownDivItems > div > h4 {
+    font-size: 20px;
+    color: rgb(60, 58, 58);
+    font-weight: 600;
+    line-height: 20px;
+    font-family: "Mier demi";
+  }
+  .dropDownDivItems > div > ul > li > a {
+    font-size: 17px;
+    color: rgb(102, 102, 102);
+    font-weight: 450;
+    line-height: 33px;
+    
+  }
+  .dropDownDivItems > div > ul > li > a:hover {
+    text-decoration: underline;
+
+    
+  }
+  /* *******************second navbar end */
+
+/* Filtering Part start****** */
+.sort,
+.filter,
+.filterbyprice,
+.filterbyBrand,
+.filterbyRating {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    margin: 5px;
+    font-family: "Raleway", sans-serif;
+    color: rgb(66, 62, 62);
+    font-weight: bold;
+    /* font-size: medium; */
+    cursor: pointer;
+}
+
+.sort,
+.filter,
+.filterbyprice,
+.filterbyBrand,
+.filterbyRating>option {
+    color: rgb(102, 98, 98);
+    /* font-weight: bold; */
+    font-size: medium;
+    cursor: pointer;
+}
+#option>select{
+    
+    outline: none;
+}
+#option>p {
+    font-family: "Raleway", sans-serif;
+    color: rgb(66, 62, 62);
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* filtering part end********/
+
+
+/* Card item css start *************/
+
+#main_container{
+    /* border: 1px solid green; */
+    display: flex;
+    gap: 20px;
+}
+
+#products{
+    /* border: 2px dotted red; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    width: 85%;
+   
+}
+.card{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 5px;
+    
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.img{
+    cursor: pointer;
+}
+.img>img{
+    display: block;
+    margin: auto;
+    padding: 25px;
+    width: 60%;
+    
+}
+.desc{
+    color: rgb(69, 64, 64);
+    font-size: small;
+    font-weight: 500;
+    line-height: 25px;
+    /* margin: 5px; */
+}
+.price{
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    /* margin: 5px; */
+}
+.price :nth-child(1){
+    color: rgb(49, 51, 51);
+}
+.price :nth-child(2){
+    color: rgb(173, 169, 169);
+    text-decoration: line-through;
+}
+.price :nth-child(3){
+    color: rgb(70, 210, 70);
+}
+.prime{
+    display: flex;
+    width: 90%;
+    margin: 5px auto;
+    font-size: small;
+    line-height: 5px;
+    background-color:#f5f5f5;
+    border-radius: 5px;
+    justify-content: center;
+    gap: 8px;
+    color: rgb(67, 64, 64);
+}
+.btn{
+    border: 1px solid orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    margin: 1px auto;
+    border-radius: 5px;
+    line-height: 7px;
+    background-color: #fcf5f0;
+    cursor: pointer;
+    color: rgb(55, 49, 49);
+}
+.btn>img{
+    width: 10%;
+    height: 10%;
+}
+.info{
+    padding: 10px;
+    border: 1px solid rgb(221, 209, 209);
+    border-radius: 5px;
+}
+.rating{
+    display: flex;
+    background-color:#00b5b7;
+    line-height: 0;
+    color: white;
+    gap: 5px;
+    width: 50px;
+    border-radius: 5px;
+    padding-left: 5px;
+
+}
+
+/* Card item css end************** */
+
+/* footer css start-******************************* */
+
+.footer-info {
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    display: flex;
+    /* justify-content: center; */
+
+    padding-top: 50px;
+
+    color: white;
+    justify-content: space-evenly;
+    background-color: rgb(13,33,34);
+
+   
+}
+
+.aboutUs li{
+    list-style: none;
+   
+}
+.aboutUs li a{
+    border: none;
+    color: white;
+    line-height: 30px;
+    /* padding: 15px 32px; */
+    /* text-align: center; */
+    /* text-align: justify; */
+    text-decoration: none;
+    
+    /* display: inline-block; */
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;;
+    /* background-color: rgb(12, 176, 176); */
+    font-family: sans-serif;
+}
+
+.aboutUs li a:hover{
+ border:1px solid white;
+}
+
+
+.brand-foot li{
+    list-style: none;
+   
+}
+.brand-foot li a{
+    border: none;
+    color: white;
+    /* padding: 15px 32px; */
+    /* text-align: center; */
+    /* text-align: justify; */
+    text-decoration: none;
+    line-height: 30px;
+    
+    /* display: inline-block; */
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;;
+    /* background-color: rgb(12, 176, 176); */
+    font-family: sans-serif;
+}
+
+.brand-foot li a:hover{
+ border:1px solid white;
+}
+
+.health li{
+    list-style: none;
+   
+}
+.health li a{
+    border: none;
+    color: white;
+    /* padding: 15px 32px; */
+    /* text-align: center; */
+    /* text-align: justify; */
+    text-decoration: none;
+    line-height: 30px;
+    
+    /* display: inline-block; */
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;;
+    /* background-color: rgb(12, 176, 176); */
+    font-family: sans-serif;
+}
+
+.health li a:hover{
+ border:1px solid white;
+}
+
+.quick li{
+    list-style: none;
+   
+}
+.quick li a{
+    border: none;
+    color: white;
+    /* padding: 15px 32px; */
+    /* text-align: center; */
+    /* text-align: justify; */
+    text-decoration: none;
+    line-height: 30px;
+    
+    /* display: inline-block; */
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;;
+    /* background-color: rgb(12, 176, 176); */
+    font-family: sans-serif;
+}
+
+.quick li a:hover{
+ border:1px solid white;
+}
+
+.contact-us{
+align-items: center;
+line-height: 30px;
+
+}
+
+
+#footer{
+
+     background-color: rgb(13,33,34); ;
+}
+
+.footer-img{
+
+    display: flex;
+    gap: 10px;
+
+    padding-left: 190px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    /* border: 1px solid red; */
+    /* width: 400px; */
+}
+
+.mesg-class{
+    display: flex;
+    padding-top: 10px;
+    gap: 5px;
+}
+
+.mesg-class div a{
+    color: white;
+}
+
+.call-class{
+    display: flex;
+    gap: 5px;
+}
+
+.call-class div a{
+    color:wheat
+}
+
+/* subscribe-part here */
+
+.subscribe{
+    /* border: 1px solid
+     red; */
+     width: 350px;
+     background-color: white;
+
+     color: black;
+     height: 400px;
+     padding: 30px;
+     font-family: sans-serif;
+}
+
+
+
+
+
+
+form.email{
+    margin-top: 10px;
+}
+
+form.email input[type=text] {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid grey;
+    float: left;
+    width: 200px;
+    background: #f1f1f1;
+   
+  
+    margin-top: 10px;
+    border-radius: 10px;
+    /* background-color: rebeccapurple; */
+
+    /* border: 1px solid red; */
+  }
+  /* form.email button {
+     float: left;
+    width: 10px;
+    padding: 20px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; 
+    cursor: pointer; 
+  } */
+
+  form.email button:hover {
+    background: #0b7dda;
+  }
+
+  form.email::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .offers-img{
+    display: flex;
+    justify-content: space-evenly;
+    padding:20px;
+  }
+
+  .offers-img div img{
+    width: 70px;
+  }
+
+  .offers{
+    padding-top: 10px;
+  }
+
+  .social-media-img{
+
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+  }
+  .social-media-img i{
+    /* border: 1px solid red; */
+    font-size: 25px;
+  }
+
+  .download-app{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+  }
+
+  .download-appstore {
+     /* border: 1px solid red; */
+    padding-top: 10px;
+  }
+  .download-app img{
+      
+    width: 100px;
+  }
+  /* search butten */
+  #submit{
+    visibility: hidden;
+    /* border: none; */
+    /* display: none; */
+  }

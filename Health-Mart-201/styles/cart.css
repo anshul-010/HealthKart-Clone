@@ -1,0 +1,196 @@
+
+.wrapper {
+    padding: 0px 70px;
+}
+#container{
+    width: 60%;
+}
+.pimage{
+   
+    width: 15%;
+}
+.pimage>img{
+    margin-top: 5%;
+    width: 100%;
+}
+#header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+}
+
+#header>img {
+    width: 15%;
+    /* height: 48px; */
+}
+
+#processing {
+    width: 25%;
+    
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+#processing img{
+    width: 70%;
+}
+
+.steps {
+    position: relative;
+    text-align: center;
+  
+    width: 20%;
+    height: -80px;
+}
+
+.hrline {
+    width: 85px;
+    height: 2px;
+    position: absolute;
+    top: 21px;
+    left: 25px;
+    margin-left: 30px;
+    background-color: #dbdee9;
+
+}
+
+/* navbar ends here********************************* */
+#cartpage{
+    display: flex;
+    justify-content: space-between;
+}
+
+#card{
+    display: flex;
+}
+#card>div>h3,h4,h6{
+    margin-top: 0;
+}
+#container{
+    display: grid;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+.details1{
+    text-align: start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#container>div{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+margin: 10px;
+text-align: center;
+border-radius: 10px;
+padding: 10px;
+background-color: rgb(255, 255, 255);
+
+}
+.qn{
+    color: rgb(33, 185, 219);
+    font-weight: bold;
+}
+#cprice{
+    text-decoration: line-through;color:#5a4c4c;
+font-weight: normal;
+}
+#hmcash ,.hmcash2{
+   font-size: small;
+   font-weight: normal;
+}
+#colr{
+    color: rgb(83, 187, 107);
+    font-size: small;
+    padding-bottom: 5px;
+}
+.buttonss{
+    border: none;
+    background-color: rgb(228, 229, 213);
+    margin: 3px;
+    border-radius: 3px;
+}
+
+#apply{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color:   rgb(88, 216, 216);
+    color: azure;
+}
+#apply>input{
+    border-radius: 3px;
+    background-color: beige;
+    
+}
+/* payment bar css */
+#Total-Pay{
+    font-weight: bold;
+    font-size: larger;
+    
+padding: 10px;
+padding-left: 80px;
+padding-right: 80px;
+color: white;
+background-color: rgb(88, 216, 216);
+border: none;
+border-radius: 10px;
+}
+#payment{
+    
+    height: 40%;
+   
+    margin-right: 30px;
+}
+#ordersum{
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+border-radius: 10px;
+padding: 10px;
+}
+#ordersum2>div{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+#ordersum2>div>p{
+    
+    margin: 5px;
+    
+}
+.green{
+    color: green;
+}
+/* footer starts here */
+footer{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+footer>p,.logos>img{
+    padding: 7px 0;
+    color: rgb(93, 93, 93);
+}
+/* Media QUeries for both smartphone and tablet */
+
+@media only screen and (max-width:810px) {
+    .wrapper{
+        padding: 10px;
+    }
+    #main{
+        flex-direction: column-reverse;
+    }
+    #header{
+        padding-top: 10px;
+        height: 150px;
+        flex-direction: column;
+    }
+    #processing{
+        top:65%;
+    }
+}

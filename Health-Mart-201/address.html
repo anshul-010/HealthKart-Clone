@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+    <link rel="stylesheet" href="./styles/address.css">
+    
+</head>
+
+<body>
+    <div id="header" class="wrapper">
+        <img src='images/HealthMart.png' alt="logo"
+            id="logo">
+        <div id="processing">
+            <div class="steps">
+                <img src="https://static1.hkrtcdn.com/hknext/static/media/checkout/fill-blue.svg" alt="">
+                <div class="headings">Cart</div>
+                <div class="hrline"></div>
+            </div>
+            <div class="steps">
+                <img src="https://static1.hkrtcdn.com/hknext/static/media/checkout/grey-address.svg" alt="">
+                <div class="headings">Address</div>
+                <div class="hrline"></div>
+            </div>
+            <div class="steps">
+                <img src="https://static1.hkrtcdn.com/hknext/static/media/checkout/grey-payment.svg" alt="">
+                <div class="headings">Payment</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main" class="wrapper">
+            <form id="addressForm">
+                <div class="singleRow">
+                    <div>
+                        <p>Name <span>*</span></p>
+                        <input id='name' type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div>
+                        <p>Mobile No. <span>*</span></p>
+                        <input id='mobile' type="text" placeholder="Enter your Mobile no." required>
+                    </div>
+                </div>
+                <div>
+                    <p>Address (Area & Street) <span>*</span></p>
+                    <input id='area' type="text"  placeholder="Type your Address" required>
+                </div>
+                <div class="singleRow">
+                    <div>
+                        <p>Landmark <span>*</span></p>
+                        <input id='landmark' type="text"  placeholder="Enter Landmark" required>
+                    </div>
+                    <div>
+                        <p>Pincode <span>*</span></p>
+                        <input  id='pincode' type="text" placeholder="Enter pincode" required>
+                    </div>
+                </div>
+                <div>
+                    <p>Email <span>*</span></p>
+                    <input id='email' type="text"  placeholder="Enter your Mail Address" required>
+                </div>
+                <div>
+                    <select name="address" id="addressType">
+                        <option value="">Address Type</option>
+                        <option value="home">Home</option>
+                        <option value="office">Office</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <input type="checkbox"><p class="inline"> I want to subscribe to Healthkart Newsletter</p>
+                <input type="submit" value="Save & Deliver">
+            </form>
+
+            
+        <div id="orderSummary">
+            <h1>Order Summary  <span id="totalitem"></span></h1>
+            <div>
+                <p class="gray">Total MRP</p>
+                <p id="totalmrp">1111</p>
+            </div>
+            <div>
+                <p class="gray">Total Discounts</p>
+                <p id="totaldiscount" class="green">11</p>
+            </div>
+            <div>
+                <p class="gray">Shipping Charges</p>
+                <p class="green">FREE</p>
+            </div>
+            <hr>
+            <div>
+                <h2>Payable Amount</h2>
+                <h2 id="paytm"></h2>
+            </div>
+            
+        </div>
+
+    </div>
+    <footer class="wrapper">
+        <p>Copyright © , HealthKart.com, or its affiliates
+        </p>
+        <div class="logos">
+            <img src="https://static1.hkrtcdn.com/hknext/static/media/common/footer/pay1.svg" alt="">
+            <img src="https://static1.hkrtcdn.com/hknext/static/media/common/footer/pay2.svg" alt="">
+            <img src="https://static1.hkrtcdn.com/hknext/static/media/common/footer/pay3.svg" alt="">
+            <img src="https://static1.hkrtcdn.com/hknext/static/media/common/footer/pay4.svg" alt="">
+            <img src="https://static1.hkrtcdn.com/hknext/static/media/common/footer/pay5.svg" alt="">
+            <img src="https://static1.hkrtcdn.com/hknext/static/media/common/footer/pay6.svg" alt="">
+        </div>
+    </footer>
+</body>
+<script src="./scripts/address.js"></script>
+
+</html>
